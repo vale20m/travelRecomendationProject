@@ -1,0 +1,123 @@
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(images/buildings-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-size: 125%;
+}
+
+header {
+    margin: 0;
+    color: white;
+}
+
+header {
+    background-image: linear-gradient(to right ,rgb(28,27,27), rgba(28,27,27, 0.5));
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 20% 35% 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+input {
+    height: 50px;
+    border-radius: 15px;
+    border-width: 0px;
+    padding: 5px;
+    width: 10%;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #9effb8;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+#searchBar {
+    width: 70%
+}
+
+main {
+    color: white;
+    margin: 10%;
+}
+
+main {
+    width: 80%;
+}
+
+main#home {
+    display: grid;
+    grid-template-columns: 20% 70%;
+    justify-content: space-evenly;
+}
+
+main h1 {
+    font-size: 300%;
+}
+
+main > p, main div > p {
+    background-color: rgba(24, 24, 24, 0.75);
+    padding: 5%;
+}
+
+#members {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+#members li {
+    background-color: rgba(24, 24, 24, 0.75);
+    padding: 5%;
+}
+
+p.name {
+    font-weight: bold;
+}
+
+p.role {
+    background-color: purple;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    padding: 5%;
+}
+
+
+form {
+    background-color: rgba(24, 24, 24, 0.75);
+    display: block;
+    padding: 10%;
+}
+
+form input, form textarea {
+    width: 100%;
+}
+
+form textarea {
+    height: 200px;
+}
+
+
