@@ -64,7 +64,7 @@ main {
 
 main#home {
     display: grid;
-    grid-template-columns: 20% 70%;
+    grid-template-columns: 30% 40%;
     justify-content: space-evenly;
 }
 
@@ -120,4 +120,23 @@ form textarea {
     height: 200px;
 }
 
+img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 
+.recommendation {
+    border-radius: 10px;
+    background-color: white;
+}
+
+.recommendation p {
+    background-color: rgba(24, 24, 24, 0);
+    color: black;
+}
+
+h2 {
+    color: black;
+    margin: 5%
+}

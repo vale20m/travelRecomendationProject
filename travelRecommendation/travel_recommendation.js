@@ -14,6 +14,7 @@ async function getResults() {
 function clearResults(){
     const div = document.querySelector("#contentFound");
     div.innerHTML = "";
+    document.querySelector("#searchBar").value = "";
 }
 
 async function showResults(event) {
@@ -33,7 +34,7 @@ async function showResults(event) {
         filteredResults.countries.forEach(element => {
             element.cities.forEach(item => {
                 const div =
-                `<div>
+                `<div class="recommendation">
                     <img src="${item.imageUrl}">
                     <h2>${item.name}</h2>
                     <p>${item.description}</p>
@@ -42,10 +43,24 @@ async function showResults(event) {
             });
         });
     } else if (filteredResults.temples != undefined) {
-
+        filteredResults.temples.forEach(element => {
+            const div =
+            `<div class="recommendation">
+                <img src="${element.imageUrl}">
+                <h2>${element.name}</h2>
+                <p>${element.description}</p>
+            </div`;
+            container.innerHTML += div;
+        });
     } else if (filteredResults.beaches != undefined) {
-
-    } else {
-
+        filteredResults.beaches.forEach(element => {
+            const div =
+            `<div class="recommendation">
+                <img src="${element.imageUrl}">
+                <h2>${element.name}</h2>
+                <p>${element.description}</p>
+            </div`;
+            container.innerHTML += div;
+        });
     }
 };
